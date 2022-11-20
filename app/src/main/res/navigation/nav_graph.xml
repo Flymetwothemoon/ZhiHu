@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/guanzhuFragment">
+    <fragment
+        android:id="@+id/shouyeFragment"
+        android:name="com.example.zhihu.shouye.shouyeFragment"
+        android:label="fragment_shouye"
+        tools:layout="@layout/fragment_shouye" >
+        <action
+            android:id="@+id/action_shouyeFragment_to_guanzhuFragment2"
+            app:destination="@id/guanzhuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guanzhuFragment"
+        android:name="com.example.zhihu.guanzhuFragment"
+        android:label="fragment_guanzhu"
+        tools:layout="@layout/fragment_guanzhu" >
+        <action
+            android:id="@+id/action_guanzhuFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wodeFragment"
+        android:name="com.example.zhihu.wodeFragment"
+        android:label="fragment_wode"
+        tools:layout="@layout/fragment_wode" />
+    <fragment
+        android:id="@+id/huiyuanFragment"
+        android:name="com.example.zhihu.huiyuan.huiyuanFragment"
+        android:label="fragment_huiyuan"
+        tools:layout="@layout/fragment_huiyuan" >
+        <action
+            android:id="@+id/action_huiyuanFragment_to_wodeFragment"
+            app:destination="@id/wodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.zhihu.addFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_huiyuanFragment"
+            app:destination="@id/huiyuanFragment" />
+    </fragment>
+</navigation>

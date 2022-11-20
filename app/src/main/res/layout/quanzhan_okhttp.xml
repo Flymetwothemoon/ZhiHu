@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+
+        android:id="@+id/cardView"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+       <RelativeLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+<TextView
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:id="@+id/quanzhan_okhttp_textview"
+    android:textSize="16dp"
+    android:textColor="@color/black"
+    android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/author"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quanzhan_okhttp_textview"
+            android:textSize="10dp"
+            />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/quanzhan_image"/>
+       </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
